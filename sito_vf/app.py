@@ -5,8 +5,8 @@ df = pd.read_csv("./sito_vf/domande.csv")
 
 st.title("Padre Nostro VERO - FALSO")
 st.write("ISTRUZIONI: ad ogni domanda sostituite VERO o FALSO con la risposta giusta scritta tutta in MAIUSCOLO, poi cliccate su correggi")
-risposta = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ]
-for i in range(13):
+risposta = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ]
+for i in range(12):
     st.write(i + 1)
     st.write(df.loc[i][0])
     risposta[i] = st.text_input("RISPOSTA " + str(i + 1), "VERO o FALSO")
